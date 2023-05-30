@@ -329,7 +329,7 @@ body {
     border-radius: 14px;
     padding: 5px;
 }
-.messages p{
+.messages, p{
    padding: 10px; 
 }
 
