@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Form Styles */
+.new-account-reg {
+  background-color: #7b6ff1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flea-log-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.flea-log-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  color: #7b6ff1;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px;
+}
+
+h4 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.kash-form {
+  position: relative;
+}
+
+.flea-k-form label {
+  color: #666666;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.form-cont {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-cont:focus {
+  outline: none;
+}
+
+.form-count {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-count:focus {
+  outline: none;
+}
+
+select.form-cont {
+  appearance: none;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='8' viewBox='0 0 16 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L8 7L15 1' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+select.form-cont:focus {
+  outline: none;
+}
+
+.snup-contaner {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #7b6ff1;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px
+} 
+.txt-sgnin3 p a{
+  color: #7923f7;
+  text-decoration: none;
+}
+
+.txt-sgnin3 p a:hover {
+  text-decoration: underline;
+  color:#f0aa04 ;
+}
+.valid-fm1{
+    color: #f40b1d;
+    font-size:10px;
+}
+
+

@@ -1,0 +1,168 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Section Styles */
+#activation-section {
+  background-color: #fff;
+  padding: 50px;
+}
+
+/* Account Activation Styles */
+.acount-act7 {
+  background-color: #7b6ff1;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  /* text-align: center; */
+  margin-bottom: 30px;
+}
+
+.acount-act7 p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Cover Styles */
+.cover-act7 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hd-text-mp3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hd-text-mp3 h1 {
+  font-size: 1.5rem ;
+  font-weight: bold;
+  color: #7b6ff1;
+  text-shadow: 1px 1px 2px;
+}
+
+.hd-text-mp3 span.logo h1{
+    font-size:30px ;
+}
+.hd-text-mp3 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Complete Activation Styles */
+.cmp-act7 h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stp-act7 ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+}
+
+.stp-act7 li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(123, 111, 241, 0.8);
+}
+
+.btn-sgn2 button {
+  background-color: #7b6ff1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-sgn2 button:hover {
+  background-color: #4f3ca4;
+  
+}
+
+button a{
+    color: #fff;
+    text-decoration:none ;
+    
+}
+button a:hover{
+    color: black; 
+}
+.act-txt3 p{
+    font-size:14px ;
+}
+.act-txt3 p a{
+    text-decoration:none ;
+    font-weight:bold ;
+    color: black;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  #activation-section {
+    padding: 30px;
+  }
+
+  .acount-act7 {
+    padding: 20px;
+  }
+
+  .cover-act7 {
+    padding: 20px;
+  }
+
+  .hd-text-mp3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hd-text-mp3 h1 {
+    font-size: 24px
+   }
+}   
+

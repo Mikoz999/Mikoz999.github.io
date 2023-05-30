@@ -1,0 +1,76 @@
+/* Set primary color */
+:root {
+    --primary-color: #7923f7;
+}
+
+h1, h3 {
+    color: var(--primary-color);
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.7em;
+}
+
+/* Style the form */
+#chng-pswd {
+    background-color: #f7f7f7;
+    padding: 2em;
+}
+
+.dtils7 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.pwd-change label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.pwd-change input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+button, input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #6200ee;
+}
+
+/* Style the back button */
+button a {
+    color: white;
+    text-decoration: none;
+}
+#btns{
+    display:flex ;
+    justify-content:space-between;
+}
+/* Apply responsive design */
+@media screen and (max-width: 768px) {
+    .pwd-change input {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pwd-change input {
+        width: 95%;
+    }
+}
+
+

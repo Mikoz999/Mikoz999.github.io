@@ -1,0 +1,88 @@
+body {
+  background-color: #7b6ff1;
+}
+
+body, input, button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.content-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cont-cont2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.f-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  color: #7b6ff1;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px;
+}
+
+.log-fm h3 {
+  color: #7b6ff1;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.kash-form {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.flea-k-form input,
+.flea-k-from input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.flea-k-form input:focus,
+.flea-k-from input:focus {
+  outline: none;
+}
+
+.btn-sgn button {
+  background-color: #7b6ff1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-sgn button:hover {
+  background-color: #4f3ca4;
+}
+
+.log-fm a {
+  color: #7b6ff1;
+  text-decoration: none;
+}
+
+.log-fm a:hover {
+  text-decoration: underline;
+}
+.emailpwdchecker7{
+    font-size:14px;
+}
+
+

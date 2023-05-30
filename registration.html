@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FleaKash new accommodation registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/register.css">
+    
+</head>
+<body>
+    <section class="new-account-reg">
+        <div class="flea-log-content">
+            <div class="Kash-log-content">
+                <div class="flea-log-header">
+                    <div class="f-logo"><label class="logo">FleaKash</label></div>
+                    <h4>New Account Registration</h4>
+                </div>
+                <form method="post" action="dashboard.html">
+                    <div class="flea-log-form">
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-form">
+                                    <input class="form-cont" name="referer" type="text"
+                                        id="referer" value="Referred by: No One" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-form">
+                                    <input class="form-cont" name="referer" type="text" placeholder="Enter Full Name" id="full_name" autocomplete="full_name" value=""autocomplete>
+                                    <br><span class="valid-fm1" id="flnamevalid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-form">
+                                    <input type="text" id="username" class="form-cont" placeholder="Enter Username" value="" name="username" required="">
+                                    <br>
+                                    <span class="valid-fm1" id="usrnamevalid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-form">
+                                    <input type="text" placeholder="Enter your email address" id="email" class="form-count" value="" required="" outocompletely>
+                                    <br><span class="valid-fm1" id="usremailvalid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="flea-k-form">
+                                <select for="country" name="country"id="country"class="form-cont" >
+                                   <option value="+257">Burundi (+257)</option>
+                                   <option value="+253">Djibouti (+253)</option>
+                                   <option value="+291">Eritrea (+291)</option>
+                                   <option value="+251">Ethiopia (+251)</option>
+                                   <option value="+254" selected>Kenya (+254)</option>
+                                   <option value="+261">Madagascar (+261)</option>
+                                   <option value="+265">Malawi (+265)</option>
+                                   <option value="+230">Mauritius (+230)</option>
+                                   <option value="+258">Mozambique (+258)</option>
+                                   <option value="+250">Rwanda(+250)</option>
+                                   <option value="+248">Seychelles (+248)</option>
+                                   <option value="+252">Somalia (+252)</option>
+                                   <option value="+211">South Sudan (+211)</option>
+                                   <option value="+255">Tanzania (+255)</option>
+                                   <option value="+256">Uganda (+256)</option>
+                                   <option value="">Other</option>
+                                 </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-form">
+                                    
+                                    <input type="number" class="form-cont" id="phone_number" name="phoe_number" placeholder="Enter phone number eg 071923...">
+                                    <br><span class="valid-fm1" id="usrnumbervalid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" >
+                            <div class="kash-form">
+                                <div class="flea-k-from">
+                                    <input type="password" required="" class="form-cont" id="password" placeholder="Enter your password">
+                                    <br><span class="valid-fm1" class="usrpswvalid"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="kash-form">
+                                <div class="flea-k-from">
+                                    <input type="password" required="" class="form-cont" id="password_confirmation" placeholder="Confirm your password">
+                                    <span id="usrpswdvalid" class="valid-fm1"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="snup-contaner">
+                           <div>
+                              <div >
+                                 <input id="submit" class="sbmt" type="submit" onclick="Redirect();" value="SUBMIT">
+                              </div>
+                           </div>
+                         <div>
+                            <div>
+                                <input type="reset" value="RESET" onclick="resetFormAll()">
+                                
+                            </div>
+                        </div>
+                       </div>
+                       <div>
+                           <div class="txt-sgnin3">
+                               <p>You already have an account? <a href="login.html">sign in</a></p>
+                           </div>
+                       </div>
+                       
+                    </div><!-- end of flea-log-form -->
+                </form>
+            </div><!-- end Kash-log-content -->
+        </div><!--  end of Kash-log-content-->
+        <footer>
+            <div>
+                <div>
+               <!--  <p>2023 © rockpythonTechnologies</p> -->
+                </div>
+            </div>
+        </footer>
+    </section><!-- end new-account-reg -->
+      <script type ="text/javascript" src="./js/formregistration.js"></script>
+      <script type ="text/javascript" src ="./js/core_activation.js"></script>
+
+</body>
+</html>
+
+

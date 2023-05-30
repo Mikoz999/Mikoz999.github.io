@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User dashboard</title>
+    <link rel="stylesheet" href="./css/dashboar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- smooth scrol-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> 
+</head>
+<body>
+    <nav>
+      <div class="navbar active">
+         <div>
+             <div class="logo"><h1>FleaKash</h1></div>
+                 <span class="sticky-nav">
+            
+                  <i class="fa fa-bars"baria-hidden="true"></i>
+                 </span>
+          </div>
+      
+         <div class="nav-main">
+            
+           <ul class="menu show-menu">
+              <li><a href="#personal-info">Personal information</a> </li>
+            
+              <li><a href="changepws.html">Account setings</a></li>
+            
+              <li><a href="#analytics">Analytics</a></li>
+              
+              <li><a href="#help">Ask for help</a></li>
+            </ul>    
+        </div>
+      </div>   
+    </nav>
+    <section id="dashboard" class="bottom-container">
+        <div class="dsb-cnt">
+            <div class="dsb-cntnt1">
+                <div class="usr-dsb">
+                   
+                    <h2>User Dashboard</h2>
+                    <span class="upln-nm3">Upline:</span>
+                    <div class="usr-name9">User Name: <span class="lnk-user-nm5">MikeB</span></div>
+                    <div class="usr-lnk">
+                        <p>copy link</p>
+                        <span class="unq-lnk"><input type="link" placeholder="https:www.linkedin.com mikozotieno@gmail.com"></span>
+                    </div>
+                </div>
+                <div class="group1">
+                    <div class="tt-elmnts">
+                      <div class="tt-erngs">
+                          <h4>Total Earnings</h4>
+                          <div class="real-eng3">Ksh. <span class="actl-eng-figr">3000.00</span></div>
+                      </div>
+                  </div>
+                  <div class="tt-elmnts">
+                      <div class="ttl-wdwls3">
+                          <h4>Total withdrawn</h4>
+                          <div class="ral-wdwl4">Ksh. <span class="actl-wdw-end">6000.00</span></div>
+                          <div class="btn-wdrwal"><button class="wdr-eng5">withdraw</button></div>
+                      </div>
+                  </div>
+                </div>
+                <div class="tt-elmnts">
+                    <div class="refrl-ens4">
+                        <h4>Referral Earnings</h4>
+                        <div class="referral-earnings">Ksh. <span class="act-refer-amount">7000.00</span></div>
+                    </div>
+                </div>
+                <div class="tt-elmnts">
+                    <div class="spn-enc7">
+                        <h4>Total Spin Income</h4>
+                        <div class="spin-income">Ksh. <span class="actl-spn-amnt5">250.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="psnl-inf3">
+                <div class="pnal-dtls3" id="personal-info">
+                    <h3>personal information</h3>
+                    <div class="usr-nm9">User Name: <span id="username">MikeB</span></div>
+                    <div class="pphn-nmbr">Phone Number:<span id="phone-number3">0797762839</span></div>
+                    <div class="eml-adr4">Email: <span id="email-ad7">mikozotieno@gmail.com</span></div>
+                   <div class="btns4"> 
+                       <div class="edt-btn-fordetails"><button class="edt6">Edit </button></div>
+                       <div class="Save-update-dtls7"><button class="updt6">Update</button></div>
+                   </div>
+                </div>
+            </div>
+        </div><!-- end of dsb-cnt -->
+    </section>
+    <section id="analytics">
+        <div class="anly-tics">
+            <div class="data-analy-tics">
+                <div class="nu-referals">
+                    <h4>Referrals</h4>
+                    <span>20</span>
+                </div>
+            </div>
+            <div class="data-analy-tics">
+                <div class="n-clicks">
+                    <h4>Clicks</h4>
+                    <span>60</span>
+                </div>
+            </div>
+             <div class="data-analy-tics">
+                <div class="ur-team">
+                    <h4>Your Downlines</h4>
+                    <p>Click the button below to view all your downlines</p>
+                    <span><button>Downlines</button>	</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="help">
+        <div class="help-cnt">
+            <div class="help-center">
+                <div class="Wtsap-grp">
+                    <h4>Join our Whatsapp group</h4>
+                    <span><button ><a href="https://chat.whatsapp.com/EEhYFLZbk3gKpm9WWJUFl1">Join</a></button></span>
+                </div>
+                
+            </div>
+            <div class="help-center">
+                <div class="wts-app-num">
+                    <h4>whatsApp</h4>
+                    <p>254797762839</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+var queryStr = window.location.search;
+var queryStrParams = new URLSearchParams(queryStr);
+var userName = queryStrParams.get("username");
+var userNameElement = document.querySelector(".lnk-user-nm5");
+userNameElement.textContent = userName;
+document.body.appendChild(userNameElement);
+
+</script> 
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
+
+

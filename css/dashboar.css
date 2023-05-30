@@ -1,0 +1,342 @@
+/* Set font family and size for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Set primary color */
+:root {
+  --primary-color: #7923f7;
+}
+
+.navbar{
+    /* display :flex ; */
+    position: fixed;
+    background-color :white ;
+    width: 100%;
+    box-shadow:0 4px 8px rgba(0,0,0,0.5);
+    transition:background-color 0.4s;
+    /* z-index: 1; */
+    top: 0;
+    left: 0;
+} 
+input {
+    border-radius: 3px ;
+}
+.sticky-nav .fa-bars {
+    position: fixed ;
+    top: 1rem;
+    right: 2rem;
+    font-size:1.7rem ;
+    Cursor :pointer ;
+    color: #7923f7;
+    
+}
+
+.sticky-nav i{
+    border:solid 1px #7923f7 ;
+    width: 35px;
+    text-align:center ;
+    border-radius: 3px;
+}
+
+.sticky-nav .fa-bars:hover{
+    color: Black;
+}
+
+#dashboard {
+  background-color: #f1f5f8;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 32px;
+  margin: 10px ;
+  Padding-left:20px ;
+}
+
+h2, h3, h4 {
+  color: #0c44d6;
+  margin-top: 0;
+}
+
+.usr-dsb {
+  background-color: #b6bab7;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.usr-name9 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.upln-nm3{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.lnk-user-nm5 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.btn-wdrwal {
+  margin-top: 10px;
+}
+
+.wdr-eng5 {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the earnings elements */
+.tt-elmnts {
+  background-color: white;
+  border: 1px solid #a1a3a1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.actl-eng-figr,
+.actl-wdw-end,
+.act-refer-amount,
+.actl-spn-amnt5 {
+  font-weight: bold;
+}
+
+/* Style the personal information section */
+.psnl-inf3 {
+  display: flex;
+  justify-content: center;
+}
+
+.pnal-dtls3 {
+  background-color: white;
+  border: 1px solid #a1a3a1;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+.pnal-dtls3 div{
+    padding: 10px ;
+}
+.pnal-dtls3 span{
+    background: lightgrey;
+    width: 100px ;
+}
+
+.edt-btn-fordetails,
+.Save-update-dtls7 {
+  margin-top: 10px;
+}
+
+.updt6 {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* nav header */
+ul{
+    list-style-type: none ;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.menu a{
+    color: grey;
+    letter-spacing: 0.1rem;
+    display :block ;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+    
+}
+.menu{
+    height: 0;
+    overflow :hidden ;
+    transition: all 0.4s linear;
+    
+    /* z-index:1; */
+    
+}
+.menu li{
+    padding: 5px ;
+    margin-left : 0;
+    font-size:1.2rem ;
+}
+.show-menu{
+    height: 11.5rem;
+    /* z-index: 1; */
+}
+.menu a:hover{
+    background: #f1f5f8 ;
+    color: #7923f7 ;
+    padding-left: 1.5rem;
+}
+
+.edt-btn-fordetails button{
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px ;
+}
+.btns4{
+    display:flex ;
+}
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .dsb-cntnt1 {
+  flex-direction: column;
+    
+  }
+}
+/* @media (min-width: 676px){
+   .dsb-cntnt1 .group1 .tt-elmnts{
+       display:flex ;
+       justify-content:space-between;
+       padding: 20px ;
+       
+   }
+} */
+/* Apply primary color */
+/* :root {
+  --primary-color: #7923f7;
+}
+ */
+/* Style analytics section */
+#analytics {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.anly-tics {
+  align-items: center;
+}
+
+.data-analy-tics {
+  text-align: center;
+  background: #f1f5f8 ;
+  padding: 10px ;
+  margin: 0;
+}
+.nu-referals, .n-clicks, .ur-team{
+    margin: 5px 20px;
+    background: grey ;
+    padding: 10px;
+    border-radius: 10px ;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.nu-referals span,
+.n-clicks span {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.ur-team button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ur-team button:hover {
+  background-color: #6a1de6;
+}
+
+/* Style help section */
+#help {
+  background-color: #f6f6f6;
+  padding: 30px;
+}
+
+.anly-tics {
+  align-items: center;
+}
+
+.help-center{
+    padding: 10px ;
+}
+
+.help-center h4 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.Wtsap-grp button,
+.wts-app-num  {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.Wtsap-grp a{
+    color: black ;
+}
+.wts-app-num p{
+    color: black ;
+}
+
+.Wtsap-grp button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Wtsap-grp button:hover {
+  background-color: #6a1de6;
+}
+
+.wts-app-num p {
+  margin-top: 5px;
+}
+
+@media (min-width: 676px){
+   .anly-tics{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 0;
+       padding: 0;
+   }
+   .nu-referals, .n-clicks{
+       margin: 0;
+       padding: 30px 70px ;
+   }
+  .ur-team{
+      padding: 20px 5px;
+  }
+  .help-cnt{
+      display:flex ;
+      justify-content:space-between;
+  }
+}
+
