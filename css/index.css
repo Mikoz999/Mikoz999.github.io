@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+ /* font-size: 16px;*/
   color: #333;
   margin: 0;
 }
@@ -82,6 +82,10 @@ body {
 @media (min-width: 676px){
     .header-nav{
         width: 500px;
+    }
+    .contact-content i{
+        color: #7923f7;
+        padding: 20px ;
     }
 }
 .logo h1{
