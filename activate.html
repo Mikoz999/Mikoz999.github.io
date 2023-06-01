@@ -27,11 +27,12 @@
                        </ol>
                    </div>
                    <div>
-                       <form>
-                           <label>Enter Mpesa Code</label>
-                           <input style="text-transform:capitalize;" type="text" placeholder="REA393RSEH" name="code" required value="">
+                       <form >
+                           <label for="M-PESA-CODE">Enter Mpesa Code</label>
+                           <input style="text-transform:capitalize;" id="M-PESA-CODE" type="text" placeholder="REA393RSEH" name="code" value="" required>
+                           <span id="valid-code7" class="iscode-valid3"></span>
                            <div class="btn-sgn2">
-                               <button><a href="">Confirm</a></button>
+                               <button type="SUBMIT">Confirm</button>
                            </div>                       
                        </form>
                    </div>
@@ -40,6 +41,7 @@
            <div class="act-txt3"><p>If you do not have an account <a href="registration.html"> create one</a></p></div>
        </div>
    </section>
+   <script src="./js/assetsactivation.js"></script>
 </body>
 </html>
 

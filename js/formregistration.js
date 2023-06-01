@@ -1,4 +1,3 @@
-// Get the form element
 const form = document.querySelector('form');
 
 function Redirect() {
@@ -22,27 +21,27 @@ function Redirect() {
   const usernameValidSpan = document.getElementById('flnamevalid');
     
     if (fullName === '') {
-      usernameValidSpan.textContent = 'Please enter your full name.';
+      usernameValidSpan.textContent = '\u2716 Please enter your full name.';
       return;
     } 
     if (!/^[a-zA-Z]+( [a-zA-Z]+)+$/.test(fullName)) {
-      usernameValidSpan.textContent = 'Please enter a valid full name (e.g., John Doe).';
+      usernameValidSpan.textContent = '\u2716 Please enter a valid full name (e.g., John Doe).';
       return;
     } else {
-      usernameValidSpan.textContent = 'Valid full name.';
+      usernameValidSpan.textContent = '✓ Valid full name.';
       usernameValidSpan.style.color = 'green';
     }
     
   if(username.length < 3) {
-      document.getElementById("usrnamevalid").innerHTML = "Username must be at least 3 characters";
+      document.getElementById("usrnamevalid").innerHTML = "\u2716 Username must be at least 3 characters";
       return;
   }
   if(username.length > 20) {
-      document.getElementById("usrnamevalid").innerHTML = "Username can't exceed 20 characters";
+      document.getElementById("usrnamevalid").innerHTML = "\u2716 Username can't exceed 20 characters";
       return;
   }
   if (username.includes(' ')) {
-    document.getElementById("usrnamevalid").textContent = 'Username should not contain spaces.';
+    document.getElementById("usrnamevalid").textContent = '\u2716 Username should not contain spaces.';
     return;
   } else {
     document.getElementById("usrnamevalid").textContent = '';
@@ -88,17 +87,21 @@ function Redirect() {
 
   const isStrongPassword = password.length >= minLength && hasUpperCase && hasLowerCase && hasNumber && hasSpecialChar;
 
-  if (!isStrongPassword) {
-      document.getElementById("usrpswdvalid").innerHTML = 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.';
-      return;
-  }else{
-    document.getElementById("usrpswdvalid").innerHTML = 'Strong/valid password';
-    document.getElementById("usrpswdvalid").style.color = 'green';
-    }
   if (password !== confirmPassword) {
-    document.getElementById("usrpswvalid").innerHTML = "&#x2716; The password do not match";
+    document.getElementById("usrpswvalid").innerHTML = "&#x2716; The passwords do not match";
+      setTimeout(() => {
+      document.getElementById("usrpswvalid").innerHTML = "";
+    }, 1000); // 1 second timeout
     return;
+  } else if (!isStrongPassword) {
+    document.getElementById("usrpswdvalid").innerHTML = '\u2716 Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.';
+    return;
+  } else {
+    document.getElementById("usrpswdvalid").innerHTML = '✓ Strong/valid password';
+    document.getElementById("usrpswdvalid").style.color = 'green';
   }
+
+  
   
   // If all input values are valid, submit the form
   /* alert('Registration form submitted!'); */
@@ -120,5 +123,4 @@ function resetFormAll() {
     document.getElementById("flnamevalid").innerHTML = "";
     document.getElementById("usrpswdvalid").innerHTML = "";
 }
-
 

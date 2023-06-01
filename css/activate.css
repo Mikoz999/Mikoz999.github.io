@@ -142,6 +142,12 @@ button a:hover{
     font-weight:bold ;
     color: black;
 }
+
+.iscode-valid3{
+    color: green;
+    padding-left :10px ;
+    font-size:12px;
+}
 /* Media Queries */
 @media (max-width: 768px) {
   #activation-section {
