@@ -87,6 +87,9 @@
                             <div class="kash-form">
                                 <div class="flea-k-from">
                                     <input type="password" required="" class="form-cont" id="password" placeholder="Enter your password">
+				    <span class="toggle-icon" onclick="togglePasswordVisibility()">
+                                        <i id="passwordIcon" class="fas fa-eye"></i>
+                                    </span>
                                     <br><span class="valid-fm1" id="usrpswvalid"></span>
                                 </div>
                             </div>
@@ -95,7 +98,10 @@
                             <div class="kash-form">
                                 <div class="flea-k-from">
                                     <input type="password" required="" class="form-cont" id="password_confirmation" placeholder="Confirm your password">
-                                    <span id="usrpswdvalid" class="valid-fm1"></span>
+                                   <span class="toggle-icon" onclick="toggleConfirmPasswordVisibility()">
+                                        <i id="confirmPasswordIcon" class="fas fa-eye"></i>
+                                    </span> 
+				    <span id="usrpswdvalid" class="valid-fm1"></span>
                                 </div>
                             </div>
                         </div>

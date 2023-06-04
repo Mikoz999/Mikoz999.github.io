@@ -124,3 +124,36 @@ function resetFormAll() {
     document.getElementById("usrpswdvalid").innerHTML = "";
 }
 
+/*user pswd visibility*/
+
+function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    var passwordIcon = document.getElementById("passwordIcon");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        passwordIcon.classList.remove("fa-eye");
+        passwordIcon.classList.add("fa-eye-slash");
+    } else {
+        passwordInput.type = "password";
+        passwordIcon.classList.remove("fa-eye-slash");
+        passwordIcon.classList.add("fa-eye");
+    }
+}
+
+function toggleConfirmPasswordVisibility() {
+    var confirmPasswordInput = document.getElementById("password_confirmation");
+    var confirmPasswordIcon = document.getElementById("confirmPasswordIcon");
+
+    if (confirmPasswordInput.type === "password") {
+        confirmPasswordInput.type = "text";
+        confirmPasswordIcon.classList.remove("fa-eye");
+        confirmPasswordIcon.classList.add("fa-eye-slash");
+    } else {
+        confirmPasswordInput.type = "password";
+        confirmPasswordIcon.classList.remove("fa-eye-slash");
+        confirmPasswordIcon.classList.add("fa-eye");
+    }
+}
+
+

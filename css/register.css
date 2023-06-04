@@ -137,4 +137,17 @@ input[type="submit"], input[type="reset"] {
     font-size:10px;
 }
 
+/* user password visibility */
+
+        .toggle-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .toggle-icon i {
+            font-size: 20px;
+        }
 
